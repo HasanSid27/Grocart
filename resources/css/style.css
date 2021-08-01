@@ -1,0 +1,443 @@
+/* color code #27ae60 */
+
+
+/* ....................... */
+/* basic setup*/
+/*........................ */ 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Montserrat','Arial',sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* ....................... */
+/* Reusable components*/
+/*........................ */ 
+
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section { 
+    padding: 80px 0;
+}
+
+
+/* ....................... */
+/* Icons*/
+/*........................ */ 
+
+
+/* ......... Links .........*/
+
+a:link,
+a:active:{
+    color: #27ae60;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #27ae60;
+}
+
+a:hover,
+a:active: {
+    color: #555;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+/* ......... Headings .........*/
+
+h1,h2,h3 { 
+    font-weight: 300;
+}
+h1{
+    margin: 0;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 260%;  
+    word-spacing: 3px;
+    letter-spacing:1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 1px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #267e7e;
+    letter-spacing:1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #27ae60;
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+        
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+    color: #051c1c;
+    white-space: nowrap;
+    font-weight: 525;
+}
+/*...... paragraphs.......*/
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box{
+    padding: 1.5%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 150%;
+}
+
+/* ......... Buttons .........*/
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+     color: #fff5f5;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link
+.btn-full:visited,
+input[type=submit] { 
+    background-color: #27ae60;
+    border-radius: 200px;
+    border: 1px solid #27ae60;
+    margin-right: 15px;
+}
+
+.btn-ghost:link
+.btn-ghost:visited {
+    border: 1px solid #27ae60;
+    border-radius: 200px;
+color: #27ae60;
+
+
+}
+
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #1b7741;
+}
+
+.btn-full:hover,
+.btn-full:active,
+input[type=submit] { 
+    background-color: #27ae60;
+    border-radius: 200px;
+    border: 1px solid #27ae60;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #27ae60;
+    border-radius: 200px;
+
+
+}
+
+/* ....................... */
+/* Header*/
+/*........................ */ 
+
+header {
+     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,url(img/gettyimages-817240836.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+ 
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s; 
+}
+
+
+.main-nav li a:hover,
+.main-nav li a:active {
+     border-bottom: 2px solid #1fb25d;
+}
+
+/* ....................... */
+/* FEATURES*/
+/*........................ */ 
+
+.section-features{
+    background-color: rgba(237, 221, 221, 0.35);
+}
+
+.section-features .long-copy{
+    margin-bottom: 30px;
+    
+}
+    
+/* ....................... */
+/* Grocery*/
+/*........................ */ 
+.section-grocery{
+    padding: 0;
+    
+    
+    
+}
+.grocery-showcase
+{
+        list-style: none; 
+    width: 100%;
+    } 
+
+.grocery-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+
+
+
+.g-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.g-photo img{
+    opacity: 0.8; 
+    width: 100%;
+    height: auto;
+    transform: scale(0.8);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.g-photo img:hover{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* ....................... */
+/* App button*/
+/*........................ */ 
+
+
+
+.sb:first-child{
+    text-align: right;
+    padding: 3%;
+    margin-top: 10px;
+    }
+
+.sb:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+    }
+
+.app-screen{
+    width: 100%;
+position: relative; top: -55px;
+}
+
+
+.work-steps{
+    margin-bottom: 40px;
+}
+
+.work-steps:last-of-type{
+    margin-bottom: 80px;
+}
+
+.work-steps div {
+    color: #27ae60;
+    border: 2px solid #27ae60;
+    display: inline-block;
+    border-radius: 50%; 
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    font-size: 125%;
+    margin-right: 25px;
+}
+
+
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+    float: left;
+}
+
+
+/* ....................... */
+/* City-features*/
+/*........................ */ 
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom:25px;
+}
+
+.city-features{
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ....................... */
+/* customer feedback*/
+/*........................ */ 
+
+.section-testimonials{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote{
+    padding: 2%;
+    font: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -3px;
+    
+}
+
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ....................... */
+/* form*/
+/*........................ */ 
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+    }
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{outline: none}
